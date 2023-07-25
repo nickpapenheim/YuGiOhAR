@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class sonneneruptionsdracheImage : MonoBehaviour
+public class boshaftePuppeImage : MonoBehaviour
 {
-    private bool sonnenEruptionsDrache;
+    private bool boshaftePuppe;
     private Material noMaterial;
     private Image img;
     
@@ -19,8 +19,8 @@ public class sonneneruptionsdracheImage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        sonnenEruptionsDrache = FindObjectOfType<appData>().sonnenEruptionsDrache;
-        if (sonnenEruptionsDrache) {
+        boshaftePuppe = FindObjectOfType<appData>().boshaftePuppe;
+        if (boshaftePuppe) {
           img.material = noMaterial;
         }
     }
